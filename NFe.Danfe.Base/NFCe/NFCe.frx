@@ -892,7 +892,7 @@ namespace FastReport
       <TextObject Name="lblCancelado" Top="1" Width="264.6" Height="15.12" Fill.Color="Gray" ShiftMode="WhenOverlapped" Text="DOCUMENTO CANCELADO" Padding="2, 1, 2, 1" HorzAlign="Center" VertAlign="Center" Font="Ubuntu Condensed, 9.749999pt, style=Bold" TextFill.Color="White"/>
     </ColumnHeaderBand>
     <GroupHeaderBand Name="ghbProdutosUmaLinha" Top="233.53" Width="264.6" Height="13.99" Visible="false" BeforePrintEvent="ghbProdutosUmaLinha_BeforePrint" AfterPrintEvent="ghbProdutosUmaLinha_AfterPrint" Condition="[NFCe.protNFe.infProt.chNFe]">
-      <ShapeObject Name="Shape2" Width="264.6" Height="13.99" Border.Width="0" Fill.Color="WhiteSmoke"/>
+      <ShapeObject Name="Shape2" Width="264.6" Height="13.99" Border.Width="0" Fill.Color="White"/>
       <TextObject Name="Text31" Top="1.13" Width="37.8" Height="11.34" Text="Código" VertAlign="Center" WordWrap="false" Font="Ubuntu Condensed, 8pt, style=Bold"/>
       <TextObject Name="Text32" Left="39.58" Top="1.13" Width="60.48" Height="11.34" Text="Descrição" VertAlign="Center" WordWrap="false" Font="Ubuntu Condensed, 8pt, style=Bold"/>
       <TextObject Name="Text33" Left="102.06" Top="1.13" Width="47.25" Height="11.34" Text="Qtd Un" HorzAlign="Right" VertAlign="Center" WordWrap="false" Font="Ubuntu Condensed, 8pt, style=Bold"/>
@@ -922,12 +922,12 @@ namespace FastReport
       </DataBand>
     </GroupHeaderBand>
     <GroupHeaderBand Name="ghbProdutosDuasLinhas" Top="285.76" Width="264.6" Height="28.35" BeforePrintEvent="ghbProdutosDuasLinhas_BeforePrint" AfterPrintEvent="ghbProdutosDuasLinhas_AfterPrint" Condition="[NFCe.protNFe.infProt.chNFe]">
-      <ShapeObject Name="Shape1" Width="264.6" Height="28.35" Border.Width="0" Fill.Color="WhiteSmoke"/>
+      <ShapeObject Name="Shape1" Width="264.6" Height="28.35" Border.Width="0" Border.Color="White" Fill.Color="White"/>
       <TextObject Name="Text7" Top="2.46" Width="49.14" Height="11.34" Text="Código" VertAlign="Center" WordWrap="false" Font="Ubuntu Condensed, 8pt, style=Bold"/>
       <TextObject Name="Text8" Left="51.92" Top="1.89" Width="211.68" Height="11.34" Text="Descrição" VertAlign="Center" WordWrap="false" Font="Ubuntu Condensed, 8pt, style=Bold"/>
-      <TextObject Name="Text9" Top="13.91" Width="92.61" Height="11.34" Text="Qtde Un" HorzAlign="Right" VertAlign="Center" WordWrap="false" Font="Ubuntu Condensed, 8pt, style=Bold"/>
-      <TextObject Name="Text10" Left="107.16" Top="13.34" Width="71.82" Height="11.34" Text="Valor Unitário" HorzAlign="Right" VertAlign="Center" WordWrap="false" Font="Ubuntu Condensed, 8pt, style=Bold"/>
-      <TextObject Name="Text11" Left="190.76" Top="13.34" Width="71.82" Height="11.34" Text="Valor Total" HorzAlign="Right" VertAlign="Center" WordWrap="false" Font="Ubuntu Condensed, 8pt, style=Bold"/>
+      <TextObject Name="Text9" Top="13.91" Width="92.61" Height="11.34" Text="Qtd Un" HorzAlign="Right" VertAlign="Center" WordWrap="false" Font="Ubuntu Condensed, 8pt, style=Bold"/>
+      <TextObject Name="Text10" Left="107.16" Top="13.34" Width="71.82" Height="11.34" Text="Vl Unit" HorzAlign="Right" VertAlign="Center" WordWrap="false" Font="Ubuntu Condensed, 8pt, style=Bold"/>
+      <TextObject Name="Text11" Left="190.76" Top="13.34" Width="71.82" Height="11.34" Text="Vl Total" HorzAlign="Right" VertAlign="Center" WordWrap="false" Font="Ubuntu Condensed, 8pt, style=Bold"/>
       <TextObject Name="Text23" Left="96.39" Top="13.99" Width="7.56" Height="11.34" Text="x" HorzAlign="Center" VertAlign="Center" WordWrap="false" Font="Ubuntu Condensed, 8pt, style=Bold"/>
       <TextObject Name="Text24" Left="181.44" Top="13.99" Width="7.56" Height="11.34" Text="=" HorzAlign="Center" VertAlign="Center" WordWrap="false" Font="Ubuntu Condensed, 8pt, style=Bold"/>
       <DataBand Name="dbProdutosDuasLinhas" Top="316.78" Width="264.6" Height="26.46" Border.Lines="Bottom" Border.Width="0.25" BeforePrintEvent="dbProdutosDuasLinhas_BeforePrint" AfterPrintEvent="dbProdutosDuasLinhas_AfterPrint" DataSource="det">
