@@ -167,22 +167,22 @@ namespace FastReport
       string msgHomologacao = &quot;&quot;;
       string msgContigencia = &quot;&quot;;
       if ( ((TipoAmbiente)Report.GetColumnValue(&quot;NFCe.NFe.infNFe.ide.tpAmb&quot;)) == TipoAmbiente.Homologacao )
-        msgHomologacao = &quot;EMITIDA EM AMBIENTE DE HOMOLOGAÇÃO – SEM VALOR FISCAL&quot; + Environment.NewLine;
-      if ( ((TipoEmissao)Report.GetColumnValue(&quot;NFCe.NFe.infNFe.ide.tpEmis&quot;)) != TipoEmissao.teNormal ) 
-        msgContigencia = &quot;EMITIDA EM CONTINGÊNCIA&quot; + Environment.NewLine;      
+        msgHomologacao = &quot;EMITIDA EM AMBIENTE DE HOMOLOGAÇÃO – SEM VALOR FISCAL&quot; + "\r\n";
+    if ( ((TipoEmissao)Report.GetColumnValue(&quot;NFCe.NFe.infNFe.ide.tpEmis&quot;)) != TipoEmissao.teNormal ) 
+        msgContigencia = &quot;EMITIDA EM CONTINGÊNCIA&quot; + "\r\n";
 
-      memMsgFiscal.Text = msgHomologacao + msgContigencia + memMsgFiscal.Text;
+    memMsgFiscal.Text = msgHomologacao + msgContigencia + memMsgFiscal.Text;
     }
 
 
     private void txtObs_BeforePrint(object sender, EventArgs e)
     {
-      txtObs.Text = ((String)Report.GetColumnValue(&quot;NFCe.NFe.infNFe.infAdic.infCpl&quot;)).Replace(&quot;;&quot;, Environment.NewLine);
+    txtObs.Text = ((String)Report.GetColumnValue(&quot;NFCe.NFe.infNFe.infAdic.infCpl&quot;)).Replace(&quot;;&quot;, "\r\n");
     }
 
     private void PgNfce_StartPage(object sender, EventArgs e)
     {
-      phbCancelado.Visible = ((Boolean)Report.GetParameterValue(&quot;NfceCancelado&quot;));
+    phbCancelado.Visible = ((Boolean)Report.GetParameterValue(&quot;NfceCancelado&quot;));
       
       if (!Engine.FinalPass) 
         return;       
