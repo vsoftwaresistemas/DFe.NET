@@ -995,7 +995,7 @@ namespace FastReport
       <TextObject Name="memMsgFiscal" Top="1.22" Width="264.6" Height="13.23" CanGrow="true" CanShrink="true" BeforePrintEvent="memMsgFiscal_BeforePrint" Text="[NFCe.NFe.infNFe.infAdic.infAdFisco]" Padding="2, 1, 2, 1" HorzAlign="Center" Font="Ubuntu Condensed, 8pt, style=Bold"/>
     </DataBand>
     <DataBand Name="dbNumeroSerieDh" Top="583.12" Width="264.6" Height="15.12" CanGrow="true" CanShrink="true" BeforePrintEvent="dbNumeroSerieDh_BeforePrint" AfterPrintEvent="dbNumeroSerieDh_AfterPrint">
-      <TextObject Name="txtDhEmissao" Width="264.6" Height="15.12" CanGrow="true" CanShrink="true" Text="Número: [PadLeft(ToString( [NFCe.NFe.infNFe.ide.nNF] ), 9, '0')] Série: [PadLeft(ToString( [NFCe.NFe.infNFe.ide.serie] ), 3, '0')] Emissão: [Substring(ToString( [NFCe.NFe.infNFe.ide.dhEmi]), 0, 19)]" Padding="2, 1, 2, 1" HorzAlign="Center" WordWrap="false" Font="Ubuntu Condensed, 8pt"/>
+      <TextObject Name="txtDhEmissao" Width="264.6" Height="15.12" CanGrow="true" CanShrink="true" Text="Número: [PadLeft(ToString( [NFCe.NFe.infNFe.ide.nNF] ), 9, '0')] Série: [PadLeft(ToString( [NFCe.NFe.infNFe.ide.serie] ), 3, '0')] Emissão: [Substring(ToString( [NFCe.NFe.infNFe.ide.dhEmi]), 0, 19)]" Padding="2, 1, 2, 1" HorzAlign="Center" WordWrap="false" Font="Ubuntu Condensed, 7pt"/>
     </DataBand>
     <DataBand Name="dbConsulta" Top="600.91" Width="264.6" Height="75.6" Border.Lines="Bottom" Border.Width="0.5" AfterPrintEvent="dbConsulta_AfterPrint">
       <TextObject Name="Memo3" Top="15.77" Width="264.6" Height="13.23" Border.Lines="Top" Border.Width="0.5" Text="Consulte pela chave de acesso em:" Padding="2, 1, 2, 1" HorzAlign="Center" VertAlign="Center" Font="Ubuntu Condensed, 8pt"/>
